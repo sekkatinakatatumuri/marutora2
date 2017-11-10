@@ -13,4 +13,4 @@
 
 Route::get('/', 'WelcomeController@index' );
 
-Route::resource('outputs', 'OutputsController', ['only' => ['create']]);
+Route::resource('welcome', 'WelcomeController', ['only' => ['create']]);
