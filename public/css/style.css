@@ -47,3 +47,7 @@ letter-spacing: 0.15em;
 background-color: #ed486f;
 border-color: #ed486f;
 }
+
+.flag {
+    width: 80px;
+}

@@ -44,7 +44,6 @@ class WelcomeController extends Controller
             $url = "http://api.openweathermap.org/data/2.5/weather?q=" . $location . "&units=" . $units . "&appid=" . $APIKEY;
             $json = file_get_contents($url);
             $items = json_decode($json,true);
-            logger($items); // これをかくとサーバログに出てきます
         }
         
         return view('welcome', [
