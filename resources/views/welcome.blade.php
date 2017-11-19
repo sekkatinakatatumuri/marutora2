@@ -54,7 +54,7 @@
                     <option value="292968,AED,アラブ首長国連邦" data-tokens="アラブ首長国連邦 UAE UnitedArabEmirates アブダビ AbuDhabi" data-subtext="アブダビ">アラブ首長国連邦</option>
                     <option value="292223,AED,アラブ首長国連邦" data-tokens="アラブ首長国連邦 UAE UnitedArabEmirates ドバイ Dubai" data-subtext="ドバイ">アラブ首長国連邦</option>
                   </optgroup>
-                  <optgroup label="ヨーロッパ地域 ->ヵ国,都市">
+                  <optgroup label="ヨーロッパ地域 ->27ヵ国,29都市">
                     <option value="2643741,GBP,イギリス" data-tokens="イギリス UnitedKingdom ロンドン London" data-subtext="ロンドン">イギリス</option>
                     <option value="3169070,EUR,イタリア" data-tokens="イタリア Italy ローマ Roma" data-subtext="ローマ">イタリア</option>
                     <option value="2988507,EUR,フランス" data-tokens="フランス France パリ Paris" data-subtext="パリ">フランス</option>
@@ -72,7 +72,7 @@
                     <option value="756135,PLN,ポーランド" data-tokens="ポーランド Poland ワルシャワ Warsaw" data-subtext="ワルシャワ">ポーランド</option>
                     <option value="264371,EUR,ギリシャ" data-tokens="ギリシャ Greece アテネ Athens" data-subtext="アテネ">ギリシャ</option>
                     <option value="2761369,EUR,オーストリア" data-tokens="オーストリア Austria ウィーン Vienna" data-subtext="ウィーン">オーストリア</option>
-                    <option value="2673730,SWE,スウェーデン" data-tokens="スウェーデン Sweden ストックホルム Stockholm" data-subtext="ストックホルム">スウェーデン</option>
+                    <option value="2673730,SEK,スウェーデン" data-tokens="スウェーデン Sweden ストックホルム Stockholm" data-subtext="ストックホルム">スウェーデン</option>
                     <option value="658225,EUR,フィンランド" data-tokens="フィンランド Finland ヘルシンキ Helsinki" data-subtext="ヘルシンキ">フィンランド</option>
                     <option value="3413829,ISK,アイスランド" data-tokens="アイスランド Iceland レイキャヴィーク Reykjavik" data-subtext="レイキャヴィーク">アイスランド</option>
                     <option value="3143244,NOK,ノルウェー" data-tokens="ノルウェー Norway オスロ Oslo" data-subtext="オスロ">ノルウェー</option>
@@ -85,7 +85,7 @@
                     <option value="703448,UAH,ウクライナ" data-tokens="ウクライナ Ukraine キエフ Kiev" data-subtext="キエフ">ウクライナ</option>
                     <option value="524901,RUB,ロシア" data-tokens="ロシア Russia モスクワ Moscow" data-subtext="モスクワ">ロシア</option>
                   </optgroup>
-                  <optgroup label="アメリカ地域">
+                  <optgroup label="アメリカ地域 ->20ヵ国,28都市">
                     <option value="4880731,USD,アメリカ" data-tokens="アメリカ America ワシントン Washington" data-subtext="ワシントン">アメリカ</option>
                     <option value="5128581,USD,アメリカ" data-tokens="アメリカ America ニューヨーク NewYorkCity" data-subtext="ニューヨーク">アメリカ</option>
                     <option value="4044012,USD,グアム" data-tokens="アメリカ America グアム Guam Hagatna ハガニア" data-subtext="ハガニア">グアム</option>
@@ -126,9 +126,9 @@
                     <option value="7732415,USD,パラオ" data-tokens="パラオ Palau コロール Koror" data-subtext="Koror">パラオ</option>
                     <option value="4032402,TOP,トンガ" data-tokens="トンガ Tonga ヌクアロファ Nukualofa" data-subtext="ヌクアロファ">トンガ</option>
                     <option value="2088122,PGK,パプアニューギニア" data-tokens="パプアニューギニア PapuaNewGuinea ポートモレスビー PortMoresby" data-subtext="ポートモレスビー">パプアニューギニア</option>
-                    ！！<option value=",,ニューカレドニア" data-tokens="ニューカレドニア" data-subtext="">ニューカレドニア</option>
+                    <option value="2139521,CFP,ニューカレドニア" data-tokens="ニューカレドニア NewCaledonia ヌメア Noumea" data-subtext="ヌメア">ニューカレドニア</option>
                   </optgroup>
-                <optgroup label="アフリカ地域 ->9ヵ国,12都市">
+                  <optgroup label="アフリカ地域 ->9ヵ国,12都市">
                     <option value="360630,EGP,エジプト" data-tokens="エジプト Egypt カイロ Cairo" data-subtext="カイロ">エジプト</option>
                     <option value="2538475,MAD,モロッコ" data-tokens="モロッコ Morocco ラバト Rabat" data-subtext="ラバト">モロッコ</option>
                     <option value="2553604,MAD,モロッコ" data-tokens="モロッコ Morocco カサブランカ Casablanca" data-subtext="カサブランカ">モロッコ</option>
@@ -150,30 +150,66 @@
         </div>
 
         <h3 class="text-center">国旗から検索 <span class="glyphicon glyphicon-globe"></span></h3>
-        <p class="text-center">アジア</p>
+        <b><p class="text-center">アフリカ</p></b>
+        <div class="text-center nationalflag">
+            <a href="{{ URL::to('/welcome/create?id=360630&ccode=EGP&keyword=エジプト') }}"><img src={{ asset('/images/flag/flag055.png') }} class="flag" alt="エジプトの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=2538475&ccode=MAD&keyword=モロッコ') }}"><img src={{ asset('/images/flag/flag128.png') }} class="flag" alt="モロッコの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=2464470&ccode=TND&keyword=チュニジア') }}"><img src={{ asset('/images/flag/flag190.png') }} class="flag" alt="チュニジアの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=2507480&ccode=DZD&keyword=アルジェリア') }}"><img src={{ asset('/images/flag/flag003.png') }} class="flag" alt="アルジェリアの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=964137&ccode=ZAR&keyword=南アフリカ共和国') }}"><img src={{ asset('/images/flag/flag174.png') }} class="flag" alt="南アフリカ共和国の情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=184745&ccode=KES&keyword=ケニア') }}"><img src={{ asset('/images/flag/flag096.png') }} class="flag" alt="ケニアの情報"></a>
+        </div>
+        <b><p class="text-center">アジア</p></b>
         <div class="text-center nationalflag">
             <a href="{{ URL::to('/welcome/create?id=1835848&ccode=KRW&keyword=韓国') }}"><img src={{ asset('/images/flag/flag099.png') }} class="flag" alt="韓国の情報"></a>
             <a href="{{ URL::to('/welcome/create?id=1816670&ccode=CNY&keyword=中国') }}"><img src={{ asset('/images/flag/flag039.png') }} class="flag" alt="中国の情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=1735161&ccode=MYR&keyword=マレーシア') }}"><img src={{ asset('/images/flag/flag115.png') }} class="flag" alt="マレーシアの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=1880252&ccode=SGD&keyword=シンガポール') }}"><img src={{ asset('/images/flag/flag169.png') }} class="flag" alt="シンガポールの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=&ccode=&keyword=アラブ首長国連邦') }}"><img src={{ asset('/images/flag/flag196.png') }} class="flag" alt="アラブ首長国連邦の情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=&ccode=&keyword=アゼルバイジャン') }}"><img src={{ asset('/images/flag/flag149.png') }} class="flag" alt="！アゼルバイジャンの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=1298824&ccode=MMK&keyword=ミャンマー') }}"><img src={{ asset('/images/flag/Myanmar.png') }} class="flag" alt="ミャンマーの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=1283240&ccode=NPR&keyword=ネパール') }}"><img src={{ asset('/images/flag/flag133.png') }} class="flag" alt="ネパールの情報"></a>
-        </div>
-        <div class="text-center nationalflag">
-            <a href="{{ URL::to('/welcome/create?id=1819729&ccode=HKD&keyword=香港') }}"><img src={{ asset('/images/flag/flag083.png') }} class="flag" alt="香港の情報"></a>
             <a href="{{ URL::to('/welcome/create?id=1821274&ccode=MOP&keyword=マカオ') }}"><img src={{ asset('/images/flag/flag111.png') }} class="flag" alt="マカオの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=1819729&ccode=HKD&keyword=香港') }}"><img src={{ asset('/images/flag/flag083.png') }} class="flag" alt="香港の情報"></a>
             <a href="{{ URL::to('/welcome/create?id=1668341&ccode=TWD&keyword=台湾') }}"><img src={{ asset('/images/flag/taiwan.jpg') }} class="flag" alt="台湾の情報"></a>
             <a href="{{ URL::to('/welcome/create?id=1609350&ccode=THB&keyword=タイ') }}"><img src={{ asset('/images/flag/flag185.png') }} class="flag" alt="タイの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=323786&ccode=TRY&keyword=トルコ') }}"><img src={{ asset('/images/flag/flag191.png') }} class="flag" alt="トルコの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=1735161&ccode=MYR&keyword=マレーシア') }}"><img src={{ asset('/images/flag/flag115.png') }} class="flag" alt="マレーシアの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=1880252&ccode=SGD&keyword=シンガポール') }}"><img src={{ asset('/images/flag/flag169.png') }} class="flag" alt="シンガポールの情報"></a>
+        </div>
+        <div class="text-center nationalflag mt20">
             <a href="{{ URL::to('/welcome/create?id=1261481&ccode=INR&keyword=インド') }}"><img src={{ asset('/images/flag/flag085.png') }} class="flag" alt="インドの情報"></a>
             <a href="{{ URL::to('/welcome/create?id=1642911&ccode=IDR&keyword=インドネシア') }}"><img src={{ asset('/images/flag/flag086.png') }} class="flag" alt="インドネシアの情報"></a>
             <a href="{{ URL::to('/welcome/create?id=1701668&ccode=PHP&keyword=フィリピン') }}"><img src={{ asset('/images/flag/flag149.png') }} class="flag" alt="フィリピンの情報"></a>
             <a href="{{ URL::to('/welcome/create?id=1566083&ccode=VND&keyword=ベトナム') }}"><img src={{ asset('/images/flag/flag204.png') }} class="flag" alt="ベトナムの情報"></a>
             <a href="{{ URL::to('/welcome/create?id=1821306&ccode=KHR&keyword=カンボジア') }}"><img src={{ asset('/images/flag/flag031.png') }} class="flag" alt="カンボジアの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=1298824&ccode=MMK&keyword=ミャンマー') }}"><img src={{ asset('/images/flag/Myanmar.png') }} class="flag" alt="ミャンマーの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=290030&ccode=QAR&keyword=カタール') }}"><img src={{ asset('/images/flag/flag153.png') }} class="flag" alt="カタールの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=2028462&ccode=MNT&keyword=モンゴル') }}"><img src={{ asset('/images/flag/flag126.png') }} class="flag" alt="モンゴルの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=323786&ccode=TRY&keyword=トルコ') }}"><img src={{ asset('/images/flag/flag191.png') }} class="flag" alt="トルコの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=292968&ccode=AED&keyword=アラブ首長国連邦') }}"><img src={{ asset('/images/flag/flag196.png') }} class="flag" alt="アラブ首長国連邦の情報"></a>
         </div>
-        <p class="text-center">北・南アメリカ</p>
+        <b><p class="text-center">ヨーロッパ</p></b>
+        <div class="text-center nationalflag">
+            <a href="{{ URL::to('/welcome/create?id=2643741&ccode=GBP&keyword=イギリス') }}"><img src={{ asset('/images/flag/flag197.png') }} class="flag" alt="イギリスの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=3117735&ccode=EUR&keyword=スペイン') }}"><img src={{ asset('/images/flag/flag175.png') }} class="flag" alt="スペインの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=3169070&ccode=EUR&keyword=イタリア') }}"><img src={{ asset('/images/flag/flag091.png') }} class="flag" alt="イタリアの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=2988507&ccode=EUR&keyword=フランス') }}"><img src={{ asset('/images/flag/flag066.png') }} class="flag" alt="フランスの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=2950159&ccode=EUR&keyword=ドイツ') }}"><img src={{ asset('/images/flag/flag070.png') }} class="flag" alt="ドイツの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=2661552&ccode=CHF&keyword=スイス') }}"><img src={{ asset('/images/flag/flag181.png') }} class="flag" alt="スイスの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=6544881&ccode=EUR&keyword=オランダ') }}"><img src={{ asset('/images/flag/flag134.png') }} class="flag" alt="オランダの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=2673730&ccode=SEK&keyword=スウェーデン') }}"><img src={{ asset('/images/flag/flag180.png') }} class="flag" alt="スウェーデンの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=756135&ccode=PLN&keyword=ポーランド') }}"><img src={{ asset('/images/flag/flag150.png') }} class="flag" alt="ポーランドの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=524901&ccode=RUB&keyword=ロシア') }}"><img src={{ asset('/images/flag/flag155.png') }} class="flag" alt="ロシアの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=2800866&ccode=EUR&keyword=ベルギー') }}"><img src={{ asset('/images/flag/flag019.png') }} class="flag" alt="ベルギーの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=2761369&ccode=EUR&keyword=オーストリア') }}"><img src={{ asset('/images/flag/flag012.png') }} class="flag" alt="オーストリアの情報"></a>
+        </div>
+        <div class="text-center nationalflag mt20">
+            <a href="{{ URL::to('/welcome/create?id=6618983&ccode=HRK&keyword=クロアチア') }}"><img src={{ asset('/images/flag/flag046.png') }} class="flag" alt="クロアチアの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=3143244&ccode=NOK&keyword=ノルウェー') }}"><img src={{ asset('/images/flag/flag139.png') }} class="flag" alt="ノルウェーの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=2618425&ccode=DKK&keyword=デンマーク') }}"><img src={{ asset('/images/flag/flag050.png') }} class="flag" alt="デンマークの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=2964574&ccode=EUR&keyword=アイルランド') }}"><img src={{ asset('/images/flag/flag089.png') }} class="flag" alt="アイルランドの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=658225&ccode=EUR&keyword=フィンランド') }}"><img src={{ asset('/images/flag/flag065.png') }} class="flag" alt="フィンランドの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=2267057&ccode=EUR&keyword=ポルトガル') }}"><img src={{ asset('/images/flag/flag151.png') }} class="flag" alt="ポルトガル'の情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=3067696&ccode=CZK&keyword=チェコ') }}"><img src={{ asset('/images/flag/flag049.png') }} class="flag" alt="チェコの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=264371&ccode=EUR&keyword=ギリシャ') }}"><img src={{ asset('/images/flag/flag073.png') }} class="flag" alt="ギリシャの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=683506&ccode=RON&keyword=ルーマニア') }}"><img src={{ asset('/images/flag/flag037.png') }} class="flag" alt="ルーマニアの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=703448&ccode=UAH&keyword=ウクライナ') }}"><img src={{ asset('/images/flag/flag195.png') }} class="flag" alt="ウクライナの情報"></a>
+        </div>
+        <b><p class="text-center">北・南アメリカ</p></b>
         <div class="text-center nationalflag">
             <a href="{{ URL::to('/welcome/create?id=4880731&ccode=USD&keyword=アメリカ') }}"><img src={{ asset('/images/flag/flag198.png') }} class="flag" alt="アメリカの情報"></a>
             <a href="{{ URL::to('/welcome/create?id=3469058&ccode=BRL&keyword=ブラジル') }}"><img src={{ asset('/images/flag/flag026.png') }} class="flag" alt="ブラジルの情報"></a>
@@ -184,34 +220,14 @@
             <a href="{{ URL::to('/welcome/create?id=3435910&ccode=ARS&keyword=アルゼンチン') }}"><img src={{ asset('/images/flag/flag008.png') }} class="flag" alt="アルゼンチンの情報"></a>
             <a href="{{ URL::to('/welcome/create?id=3871336&ccode=CLP&keyword=チリ') }}"><img src={{ asset('/images/flag/flag038.png') }} class="flag" alt="チリの情報"></a>
         </div>
-        <p class="text-center">アフリカ</p>
-        <div class="text-center nationalflag">
-            <a href="{{ URL::to('/welcome/create?id=360630&ccode=EGP&keyword=エジプト') }}"><img src={{ asset('/images/flag/flag055.png') }} class="flag" alt="エジプトの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=2538475&ccode=MAD&keyword=モロッコ') }}"><img src={{ asset('/images/flag/flag128.png') }} class="flag" alt="モロッコの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=2464470&ccode=TND&keyword=チュニジア') }}"><img src={{ asset('/images/flag/flag190.png') }} class="flag" alt="チュニジアの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=2507480&ccode=DZD&keyword=アルジェリア') }}"><img src={{ asset('/images/flag/flag003.png') }} class="flag" alt="アルジェリアの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=964137&ccode=ZAR&keyword=南アフリカ共和国') }}"><img src={{ asset('/images/flag/flag174.png') }} class="flag" alt="南アフリカ共和国の情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=184745&ccode=KES&keyword=ケニア') }}"><img src={{ asset('/images/flag/flag096.png') }} class="flag" alt="ケニアの情報"></a>
-        </div>
-        <p class="text-center">オセアニア</p>
+        <b><p class="text-center">オセアニア</p></b>
         <div class="text-center nationalflag">
             <a href="{{ URL::to('/welcome/create?id=2172517&ccode=AUD&keyword=オーストラリア') }}"><img src={{ asset('/images/flag/flag011.png') }} class="flag" alt="オーストラリアの情報"></a>
             <a href="{{ URL::to('/welcome/create?id=7303944&ccode=USD&keyword=パラオ') }}"><img src={{ asset('/images/flag/flag143.png') }} class="flag" alt="パラオの情報"></a>
             <a href="{{ URL::to('/welcome/create?id=2198148&ccode=FJD&keyword=フィジー') }}"><img src={{ asset('/images/flag/flag064.png') }} class="flag" alt="フィジーの情報"></a>
             <a href="{{ URL::to('/welcome/create?id=2179537&ccode=NZD&keyword=ニュージーランド') }}"><img src={{ asset('/images/flag/flag135.png') }} class="flag" alt="ニュージーランドの情報"></a>
-        </div>
-        <p class="text-center">ヨーロッパ</p>
-        <div class="text-center nationalflag">
-            <a href="{{ URL::to('/welcome/create?id=2643741&ccode=GBP&keyword=イギリス') }}"><img src={{ asset('/images/flag/flag197.png') }} class="flag" alt="イギリスの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=3117735&ccode=EUR&keyword=スペイン') }}"><img src={{ asset('/images/flag/flag175.png') }} class="flag" alt="スペインの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=3169070&ccode=EUR&keyword=イタリア') }}"><img src={{ asset('/images/flag/flag091.png') }} class="flag" alt="イタリアの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=2988507&ccode=EUR&keyword=フランス') }}"><img src={{ asset('/images/flag/flag066.png') }} class="flag" alt="フランスの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=2950159&ccode=EUR&keyword=ドイツ') }}"><img src={{ asset('/images/flag/flag070.png') }} class="flag" alt="ドイツの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=6618983&ccode=HRK&keyword=クロアチア') }}"><img src={{ asset('/images/flag/flag046.png') }} class="flag" alt="クロアチアの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=2661552&ccode=CHF&keyword=スイス') }}"><img src={{ asset('/images/flag/flag181.png') }} class="flag" alt="スイスの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=6544881&ccode=EUR&keyword=オランダ') }}"><img src={{ asset('/images/flag/flag134.png') }} class="flag" alt="オランダの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=524901&ccode=RUB&keyword=ロシア') }}"><img src={{ asset('/images/flag/flag155.png') }} class="flag" alt="ロシアの情報"></a>
-            <a href="{{ URL::to('/welcome/create?id=703448&ccode=UAH&keyword=ウクライナ') }}"><img src={{ asset('/images/flag/flag195.png') }} class="flag" alt="ウクライナの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=4032402&ccode=TOP&keyword=トンガ') }}"><img src={{ asset('/images/flag/flag188.png') }} class="flag" alt="トンガの情報"></a>
+            <a href="{{ URL::to('/welcome/create?id=2088122&ccode=PGK&keyword=パプアニューギニア') }}"><img src={{ asset('/images/flag/flag146.png') }} class="flag" alt="パプアニューギニアの情報"></a>
         </div>
         </div>
     </div>

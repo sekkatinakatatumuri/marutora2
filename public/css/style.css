@@ -18,6 +18,9 @@ display: inline-block;
 p {
   margin: 0;
 }
+.mt20 {
+margin-top: 20px;
+}
 .flag:hover {
 opacity: 0.8;
 }
