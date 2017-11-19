@@ -2,12 +2,68 @@
 
 /* body */
 body {
-background: #f2f2f2;
+background: #eee;
+font-family: "メイリオ", meiryo, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", sans-serif;
 }
 footer {
 margin-top: 40px;
 }
-
+li {
+list-style-type: none;
+}
+ul {
+padding-left: 20px;
+display: inline-block;
+}
+p {
+  margin: 0;
+}
+.flag:hover {
+opacity: 0.8;
+}
+.flag {
+width: 80px;
+}
+.img_left{
+	float: left;
+	padding: 5px;
+}
+.clear{
+	clear: both;
+	margin: 0 0 10px 0;
+}
+.newsname {
+  padding: 5px 0;
+}
+.category::before {
+content: '';
+display: inline-block;
+width: 25px;
+height: 25px;
+margin-right: 8px;
+border: 3px solid;
+border-radius: 50%;
+border-color: #0883FF;
+}
+.inner {
+background-color: #fff;
+padding: 5px 5px;
+border-radius: 6px; 
+border-bottom: 3px solid;
+border-color: #FFE46D;
+}
+.wraps {
+margin: 20px 0;
+}
+.wrapn {
+margin-bottom: 20px;
+}
+.wrapw {
+margin-bottom: 20px;
+}
+.wrape {
+margin-bottom: 20px;
+}
 /* navbar */
 .navbar {
 background-color: #fff;
@@ -20,10 +76,9 @@ height: 40px;
 /* cover */
 .cover {
 margin-top: -20px;
-margin-bottom: 20px;
-width: 100%;
-height: 400px;
-background: url("/images/cover-bg.jpg") center center no-repeat;
+width: 100vw;
+height: 320px;
+background: url("/images/cover-bg.jpg") center no-repeat;
 background-size: cover;
 }
 .cover .cover-inner {
@@ -39,15 +94,11 @@ position: relative;
 }
 .cover .cover-inner .cover-contents h1 {
 margin: 0 0 20px 0;
-color: #3f3f3f;
+color: #fd0;
 font-weight: bold;
 letter-spacing: 0.15em;
 }
 .cover .btn-success {
 background-color: #ed486f;
 border-color: #ed486f;
-}
-
-.flag {
-    width: 80px;
 }

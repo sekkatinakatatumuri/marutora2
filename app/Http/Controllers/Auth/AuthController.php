@@ -23,6 +23,12 @@ class AuthController extends Controller
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
+    // ユーザ登録直後のリダイレクト先の指定 #welcome.blade.php
+    protected $redirectTo = '/';
+    
+    // ログイン失敗したときにリダイレクトされるリダイレクト先の指定 #login.blade.php
+    protected $loginPath = '/login';
+    
     /**
      * Create a new authentication controller instance.
      *
