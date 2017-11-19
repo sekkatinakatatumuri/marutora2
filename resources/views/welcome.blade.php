@@ -104,15 +104,16 @@
                     <option value="3688689,COP,コロンビア" data-tokens="コロンビア Columbia ボゴタ Bogota" data-subtext="ボゴタ">コロンビア</option>
                     <option value="3652462,USD,エクアドル" data-tokens="エクアドル Ecuador キト Quito" data-subtext="キト">エクアドル</option>
                     <option value="3657509,USD,エクアドル" data-tokens="エクアドル Ecuador グアヤキル Guayaquil" data-subtext="グアヤキル">エクアドル</option>
-                    <option value=",,ボリビア" data-tokens="ボリビア Bolivia" data-subtext="">ボリビア</option>
-                    <option value=",,ウルグアイ" data-tokens="ウルグアイ Uruguay" data-subtext="">ウルグアイ</option>
-                    <option value=",,パラグアイ" data-tokens="パラグアイ Paraguay" data-subtext="">パラグアイ</option>
-                    <option value=",,プエルトリコ" data-tokens="プエルトリコ PuertoRico" data-subtext="">プエルトリコ</option>
-                    <option value=",,バハマ" data-tokens="バハマ Bahama" data-subtext="">バハマ</option>
-                    <option value=",,パナマ" data-tokens="パナマ Panama" data-subtext="">パナマ</option>
-                    <option value=",,ジャマイカ" data-tokens="ジャマイカ Jamaica" data-subtext="">ジャマイカ</option>
-                    <option value=",,コスタリカ" data-tokens="コスタリカ CostaRica" data-subtext="">コスタリカ</option>
-                    <option value=",,ドミニカ" data-tokens="ドミニカ共和国 Dominica" data-subtext="">ドミニカ共和国</option>
+                    <option value="3903987,BOB,ボリビア" data-tokens="ボリビア Bolivia スクレ Sucre" data-subtext="スクレ">ボリビア</option>
+                    <option value="3904906,BOB,ボリビア" data-tokens="ボリビア Bolivia サンタクルス SantaCruz" data-subtext="サンタクルス">ボリビア</option>
+                    <option value="3441575,UYU,ウルグアイ" data-tokens="ウルグアイ Uruguay モンテビデオ Montevideo" data-subtext="モンテビデオ">ウルグアイ</option>
+                    <option value="3439389,PYG,パラグアイ" data-tokens="パラグアイ Paraguay アスンシオン Asuncion" data-subtext="アスンシオン">パラグアイ</option>
+                    <option value="4568127,USD,プエルトリコ" data-tokens="プエルトリコ PuertoRico サンフアン SanJuan" data-subtext="サンフアン">プエルトリコ</option>
+                    <option value="3571824,BSD,バハマ" data-tokens="バハマ Bahama ナッソー Nassau" data-subtext="ナッソー">バハマ</option>
+                    <option value="3703443,PAB,パナマ" data-tokens="パナマ Panama パナマシティ PanamaCity" data-subtext="パナマシティ">パナマ</option>
+                    <option value="3489854,JMD,ジャマイカ" data-tokens="ジャマイカ Jamaica キングストン Kingston" data-subtext="キングストン">ジャマイカ</option>
+                    <option value="3621849,CRC,コスタリカ" data-tokens="コスタリカ CostaRica サンホセ SanJose" data-subtext="サンホセ">コスタリカ</option>
+                    <option value="3492908,DOP,ドミニカ" data-tokens="ドミニカ共和国 Dominica サントドミンゴ SantoDomingo" data-subtext="サントドミンゴ">ドミニカ共和国</option>
                   </optgroup>
                   <optgroup label="オセアニア地域 ->7ヵ国,11都市">
                     <option value="2172517,AUD,オーストラリア" data-tokens="オーストラリア Australia キャンベラ Canberra" data-subtext="Canberra">オーストラリア</option>
