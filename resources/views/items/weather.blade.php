@@ -5,17 +5,17 @@
     <h3>{{$weather['city']['name']}}</h3>
     <ul>
         @if ($weather['list'][3]['weather'][0]['main'] === 'Clouds')
-            <img src= {{ asset('/images/weather/26.png') }} class="weather" alt="曇り"></a>
+        <img src= {{ asset('/images/weather/26.png') }} class="weather" alt="曇り"></a>
         @elseif ($weather['list'][3]['weather'][0]['main'] === 'Rain')
-            <img src= {{ asset('/images/weather/12.png') }} class="weather" alt="雨"></a>
+        <img src= {{ asset('/images/weather/12.png') }} class="weather" alt="雨"></a>
         @elseif ($weather['list'][3]['weather'][0]['main'] === 'Mist')
-            <img src= {{ asset('/images/weather/18.png') }} class="weather" alt="小雨"></a>
+        <img src= {{ asset('/images/weather/18.png') }} class="weather" alt="小雨"></a>
         @elseif ($weather['list'][3]['weather'][0]['main'] === 'Clear')
-            <img src= {{ asset('/images/weather/32.png') }} class="weather" alt="晴れ"></a>
+        <img src= {{ asset('/images/weather/32.png') }} class="weather" alt="晴れ"></a>
         @elseif ($weather['list'][3]['weather'][0]['main'] === 'Smoke')   
-            <img src= {{ asset('/images/weather/20.png') }} class="weather" alt="霧"></a>
+        <img src= {{ asset('/images/weather/20.png') }} class="weather" alt="霧"></a>
         @elseif ($weather['list'][3]['weather'][0]['main'] === 'Snow')   
-            <img src= {{ asset('/images/weather/16.png') }} class="weather" alt="雪"></a>
+        <img src= {{ asset('/images/weather/16.png') }} class="weather" alt="雪"></a>
         @endif
         <li>日時：{{ $weather['list'][3]['dt_txt'] }}</li>
         <li>天候：{{ $weather['list'][3]['weather'][0]['main'] }}</li>

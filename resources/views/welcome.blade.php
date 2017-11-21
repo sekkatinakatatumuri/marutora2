@@ -116,17 +116,17 @@
                     <option value="3492908,DOP,ドミニカ" data-tokens="ドミニカ共和国 Dominica サントドミンゴ SantoDomingo" data-subtext="サントドミンゴ">ドミニカ共和国</option>
                   </optgroup>
                   <optgroup label="オセアニア地域 ->7ヵ国,11都市">
-                    <option value="2172517,AUD,オーストラリア" data-tokens="オーストラリア Australia キャンベラ Canberra" data-subtext="Canberra">オーストラリア</option>
-                    <option value="2147714,AUD,オーストラリア" data-tokens="オーストラリア Australia シドニー Sydney" data-subtext="Sydney">オーストラリア</option>
-                    <option value="2158177,AUD,オーストラリア" data-tokens="オーストラリア Australia メルボルン Melbourne" data-subtext="Melbourne">オーストラリア</option>
-                    <option value="2179537,NZD,ニュージーランド" data-tokens="ニュージーランド NewZealand ウェリントン Wellington" data-subtext="Wellington">ニュージーランド</option>
-                    <option value="2193733,NZD,ニュージーランド" data-tokens="ニュージーランド NewZealand オークランド Auckland" data-subtext="Auckland">ニュージーランド</option>
-                    <option value="2198148,FJD,フィジー" data-tokens="フィジー Fiji スバ Suva" data-subtext="Suva">フィジー</option>
-                    <option value="7303944,USD,パラオ" data-tokens="パラオ Palau マルキョク Melekeok" data-subtext="Melekeok">パラオ</option>
-                    <option value="7732415,USD,パラオ" data-tokens="パラオ Palau コロール Koror" data-subtext="Koror">パラオ</option>
+                    <option value="2172517,AUD,オーストラリア" data-tokens="オーストラリア Australia キャンベラ Canberra" data-subtext="キャンベラ">オーストラリア</option>
+                    <option value="2147714,AUD,オーストラリア" data-tokens="オーストラリア Australia シドニー Sydney" data-subtext="シドニー">オーストラリア</option>
+                    <option value="2158177,AUD,オーストラリア" data-tokens="オーストラリア Australia メルボルン Melbourne" data-subtext="メルボルン">オーストラリア</option>
+                    <option value="2179537,NZD,ニュージーランド" data-tokens="ニュージーランド NewZealand ウェリントン Wellington" data-subtext="ウェリントン">ニュージーランド</option>
+                    <option value="2193733,NZD,ニュージーランド" data-tokens="ニュージーランド NewZealand オークランド Auckland" data-subtext="Aオークランド">ニュージーランド</option>
+                    <option value="2198148,FJD,フィジー" data-tokens="フィジー Fiji スバ Suva" data-subtext="スバ">フィジー</option>
+                    <option value="7303944,USD,パラオ" data-tokens="パラオ Palau マルキョク Melekeok" data-subtext="マルキョク">パラオ</option>
+                    <option value="7732415,USD,パラオ" data-tokens="パラオ Palau コロール Koror" data-subtext="コロール">パラオ</option>
                     <option value="4032402,TOP,トンガ" data-tokens="トンガ Tonga ヌクアロファ Nukualofa" data-subtext="ヌクアロファ">トンガ</option>
                     <option value="2088122,PGK,パプアニューギニア" data-tokens="パプアニューギニア PapuaNewGuinea ポートモレスビー PortMoresby" data-subtext="ポートモレスビー">パプアニューギニア</option>
-                    <option value="2139521,CFP,ニューカレドニア" data-tokens="ニューカレドニア NewCaledonia ヌメア Noumea" data-subtext="ヌメア">ニューカレドニア</option>
+                    <option value="2139521,XPF,ニューカレドニア" data-tokens="ニューカレドニア NewCaledonia ヌメア Noumea" data-subtext="ヌメア">ニューカレドニア</option>
                   </optgroup>
                   <optgroup label="アフリカ地域 ->9ヵ国,12都市">
                     <option value="360630,EGP,エジプト" data-tokens="エジプト Egypt カイロ Cairo" data-subtext="カイロ">エジプト</option>

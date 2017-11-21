@@ -28,15 +28,15 @@ opacity: 0.8;
 width: 80px;
 }
 .img_left{
-	float: left;
-	padding: 5px;
+float: left;
+padding: 5px;
 }
 .clear{
-	clear: both;
-	margin: 0 0 10px 0;
+clear: both;
+margin: 0 0 10px 0;
 }
 .newsname {
-  padding: 5px 0;
+padding: 5px 0;
 }
 .category::before {
 content: '';

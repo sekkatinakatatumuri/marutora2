@@ -39,48 +39,6 @@ class WelcomeController extends Controller
             $currency_code = $select_parameters [1];
             $keyword = $select_parameters [2];
         }
-
-        /**
-         * currencylayer
-         */
-        if ($city_code) {
-            # set API Endpoint, access key, required parameters
-            $endpoint = "convert";
-            $access_key = "1235f3c5a380ac1b4b50e90cc01aefc5";
-            $from = $currency_code;
-            $to = "JPY";
-            $amount = 1;
-            
-            # initialize CURL
-            $ch = curl_init("https://apilayer.net/api/". $endpoint . "?access_key=" . $access_key . "&from=" . $from . "&to=" . $to . "&amount=" . $amount);   
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            
-            # get the (still encoded) JSON data
-            $json = curl_exec($ch);
-            curl_close($ch);
-            
-            # Decode JSON response
-            $exchange = json_decode($json, true);
-        }
-        
-        /**
-         * OpenWeatherMap API
-         */
-        if ($city_code) {
-            # set access key, required parameters
-            $city_id = $city_code;
-            $units = "metric";
-            $APIKEY = "3baebe8732d7455a542057847c0e17f7";
-            
-            # initilize URL
-            $url = "http://api.openweathermap.org/data/2.5/forecast?id=" . $city_id . "&units=" . $units . "&appid=" . $APIKEY;
-            
-            # get the (still encoded) JSON data
-            $json = file_get_contents($url);
-            
-            # Decode JSON response
-            $weather = json_decode($json, true);
-        }
         
         /**
          * Bing News Search API v7
@@ -126,8 +84,54 @@ class WelcomeController extends Controller
             $news = json_decode($json, true);
         }
         
+        /**
+         * currencylayer
+         */
+        if ($city_code) {
+            # set API Endpoint, access key, required parameters
+            $endpoint = "convert";
+            $access_key = "1235f3c5a380ac1b4b50e90cc01aefc5";
+            $from = $currency_code;
+            $to = "JPY";
+            $amount = 1;
+            
+            # initialize CURL
+            $ch = curl_init("https://apilayer.net/api/". $endpoint . "?access_key=" . $access_key . "&from=" . $from . "&to=" . $to . "&amount=" . $amount);   
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            
+            # get the (still encoded) JSON data
+            $json = curl_exec($ch);
+            curl_close($ch);
+            
+            # Decode JSON response
+            $exchange = json_decode($json, true);
+        }
+        
+        /**
+         * OpenWeatherMap API
+         */
+        if ($city_code) {
+            # set access key, required parameters
+            $city_id = $city_code;
+            $units = "metric";
+            $APIKEY = "3baebe8732d7455a542057847c0e17f7";
+            
+            # initilize URL
+            $url = "http://api.openweathermap.org/data/2.5/forecast?id=" . $city_id . "&units=" . $units . "&appid=" . $APIKEY;
+            
+            # get the (still encoded) JSON data
+            $json = file_get_contents($url);
+            
+            # Decode JSON response
+            $weather = json_decode($json, true);
+        }
+        
         # dump and die
         # dd($news);
+        
+        /**
+         * FlightAware FlightXML
+         */
         
         return view('welcome', [
             'weather' => $weather,
