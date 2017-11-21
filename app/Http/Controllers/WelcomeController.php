@@ -128,11 +128,7 @@ class WelcomeController extends Controller
         
         # dump and die
         # dd($news);
-        
-        /**
-         * FlightAware FlightXML
-         */
-        
+
         return view('welcome', [
             'weather' => $weather,
             'exchange' => $exchange,

@@ -6,7 +6,7 @@
         <div class="cover-contents">
             <h1>旅先の情報をまるっと表示する</h1>
             @unless (Auth::check())
-                <a href="{{ route('signup.get') }}" class="btn btn-success btn-lg">まるトラを始める</a>
+            <a href="{{ route('signup.get') }}" class="btn btn-success btn-lg">まるトラを始める</a>
             @endunless
         </div>
 
@@ -76,7 +76,7 @@
                     <option value="658225,EUR,フィンランド" data-tokens="フィンランド Finland ヘルシンキ Helsinki" data-subtext="ヘルシンキ">フィンランド</option>
                     <option value="3413829,ISK,アイスランド" data-tokens="アイスランド Iceland レイキャヴィーク Reykjavik" data-subtext="レイキャヴィーク">アイスランド</option>
                     <option value="3143244,NOK,ノルウェー" data-tokens="ノルウェー Norway オスロ Oslo" data-subtext="オスロ">ノルウェー</option>
-                    <option value="727011,BGL,ブルガリア" data-tokens="ブルガリア Bulgaria ソフィア Sofia" data-subtext="ソフィア">ブルガリア</option>
+                    <option value="727011,BGN,ブルガリア" data-tokens="ブルガリア Bulgaria ソフィア Sofia" data-subtext="ソフィア">ブルガリア</option>
                     <option value="2964574,EUR,アイルランド" data-tokens="アイルランド Ireland ダブリン Dublin" data-subtext="ダブリン">アイルランド</option>
                     <option value="683506,RON,ルーマニア" data-tokens="ルーマニア Romania ブカレスト Bucharest" data-subtext="ブカレスト">ルーマニア</option>
                     <option value="3196359,EUR,スロベニア" data-tokens="スロベニア Slovenia リュブリャナ Ljubljana" data-subtext="リュブリャナ">スロベニア</option>
@@ -100,7 +100,7 @@
                     <option value="3936456,PEN,ペルー" data-tokens="ペルー Peru リマ Lima" data-subtext="リマ">ペルー</option>
                     <option value="3435910,ARS,アルゼンチン" data-tokens="アルゼンチン Argentina ブエノスアイレス BuenosAires" data-subtext="ブエノスアイレス">アルゼンチン</option>
                     <option value="3871336,CLP,チリ" data-tokens="チリ Chile サンティアゴ Santiago" data-subtext="サンティアゴ">チリ</option>
-                    <option value="3646738,VEB,ベネズエラ" data-tokens="ベネズエラ Venezuela カラカス Caracas" data-subtext="カラカス">ベネズエラ</option>
+                    <option value="3646738,VEF,ベネズエラ" data-tokens="ベネズエラ Venezuela カラカス Caracas" data-subtext="カラカス">ベネズエラ</option>
                     <option value="3688689,COP,コロンビア" data-tokens="コロンビア Columbia ボゴタ Bogota" data-subtext="ボゴタ">コロンビア</option>
                     <option value="3652462,USD,エクアドル" data-tokens="エクアドル Ecuador キト Quito" data-subtext="キト">エクアドル</option>
                     <option value="3657509,USD,エクアドル" data-tokens="エクアドル Ecuador グアヤキル Guayaquil" data-subtext="グアヤキル">エクアドル</option>
@@ -120,7 +120,7 @@
                     <option value="2147714,AUD,オーストラリア" data-tokens="オーストラリア Australia シドニー Sydney" data-subtext="シドニー">オーストラリア</option>
                     <option value="2158177,AUD,オーストラリア" data-tokens="オーストラリア Australia メルボルン Melbourne" data-subtext="メルボルン">オーストラリア</option>
                     <option value="2179537,NZD,ニュージーランド" data-tokens="ニュージーランド NewZealand ウェリントン Wellington" data-subtext="ウェリントン">ニュージーランド</option>
-                    <option value="2193733,NZD,ニュージーランド" data-tokens="ニュージーランド NewZealand オークランド Auckland" data-subtext="Aオークランド">ニュージーランド</option>
+                    <option value="2193733,NZD,ニュージーランド" data-tokens="ニュージーランド NewZealand オークランド Auckland" data-subtext="オークランド">ニュージーランド</option>
                     <option value="2198148,FJD,フィジー" data-tokens="フィジー Fiji スバ Suva" data-subtext="スバ">フィジー</option>
                     <option value="7303944,USD,パラオ" data-tokens="パラオ Palau マルキョク Melekeok" data-subtext="マルキョク">パラオ</option>
                     <option value="7732415,USD,パラオ" data-tokens="パラオ Palau コロール Koror" data-subtext="コロール">パラオ</option>
@@ -136,7 +136,7 @@
                     <option value="2507480,DZD,アルジェリア" data-tokens="アルジェリア Algeria アルジェ Algiers" data-subtext="アルジェ">アルジェリア</option>
                     <option value="2352778,NGN,ナイジェリア" data-tokens="ナイジェリア Nigeria アブジャ Abuja" data-subtext="アブジャ">ナイジェリア</option>
                     <option value="2332459,NGN,ナイジェリア" data-tokens="ナイジェリア Nigeria ラゴス Lagos" data-subtext="ラゴス">ナイジェリア</option>
-                    <option value="1040652,MZM,モザンビーク" data-tokens="モザンビーク Mozambique マプト Maputo" data-subtext="マプト">モザンビーク</option>
+                    <option value="1040652,MZN,モザンビーク" data-tokens="モザンビーク Mozambique マプト Maputo" data-subtext="マプト">モザンビーク</option>
                     <option value="964137,ZAR,南アフリカ共和国" data-tokens="南アフリカ共和国 SouthAfrica プレトリア Pretoria" data-subtext="プレトリア">南アフリカ共和国</option>
                     <option value="993800,ZAR,南アフリカ共和国" data-tokens="南アフリカ共和国 SouthAfrica ヨハネスブルグ Johannesburg" data-subtext="ヨハネスブルグ">南アフリカ共和国</option>
                     <option value="184745,KES,ケニア" data-tokens="ケニア Kenya ナイロビ Nairobi" data-subtext="ナイロビ">ケニア</option>
@@ -221,7 +221,7 @@
             <a href="{{ URL::to('/welcome/create?id=3871336&ccode=CLP&keyword=チリ') }}"><img src={{ asset('/images/flag/flag038.png') }} class="flag" alt="チリの情報"></a>
         </div>
         <b><p class="text-center">オセアニア</p></b>
-        <div class="text-center nationalflag">
+        <div class="text-center nationalflag last">
             <a href="{{ URL::to('/welcome/create?id=2172517&ccode=AUD&keyword=オーストラリア') }}"><img src={{ asset('/images/flag/flag011.png') }} class="flag" alt="オーストラリアの情報"></a>
             <a href="{{ URL::to('/welcome/create?id=7303944&ccode=USD&keyword=パラオ') }}"><img src={{ asset('/images/flag/flag143.png') }} class="flag" alt="パラオの情報"></a>
             <a href="{{ URL::to('/welcome/create?id=2198148&ccode=FJD&keyword=フィジー') }}"><img src={{ asset('/images/flag/flag064.png') }} class="flag" alt="フィジーの情報"></a>
