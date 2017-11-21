@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<!--OGP-->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta property="og:title" content="Marutora" />
+<meta property="og:type" content="travel" />
+<meta property="og:url" content="http://marutora.herokuapp.com/" />
+<meta property="og:image" content="http://marutora.herokuapp.com/images/logo.png" />
+<meta property="og:site_name" content="Marutora" />
+<meta property="og:description" content="旅先の情報をまるっと表示する" />
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,9 +21,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<!--font-awesome-->
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 <!--bootstrap-select-->
 <!-- Latest compiled and minified CSS -->

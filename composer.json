@@ -9,7 +9,6 @@
         "laravel/framework": "5.1.*",
         "laravelcollective/html": "5.1.*",
         "thomaswelton/laravel-gravatar": "~1.0",
-        "oneforge/forexquotes": "2.0.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
