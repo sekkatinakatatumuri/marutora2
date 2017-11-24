@@ -6,7 +6,7 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 <meta property="og:type" content="travel" />
 <meta property="og:url" content="http://marutora.herokuapp.com/" />
-<meta property="og:image" content="http://marutora.herokuapp.com/images/logo.png" />
+<meta property="og:image" content="http://marutora.herokuapp.com/images/cover-bg.jpg" />
 <meta property="og:site_name" content="Marutora" />
 <meta property="og:description" content="旅先の情報をまるっと表示する" />
 
